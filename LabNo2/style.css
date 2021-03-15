@@ -1,0 +1,247 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.maxw {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  height: 136px;
+  width: 100%;
+  background: #2b2c2c;
+  display: flex;
+  align-items: center;
+}
+
+header > div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 75px;
+  color: #feb633;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header li a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 50px;
+  letter-spacing: 0.012em;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0 0.35 ease;
+  text-decoration: none;
+}
+
+header li:not(:first-of-type) {
+  margin-left: 42px;
+}
+
+header li .active {
+  color: #feb633;
+}
+
+header a.active:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #feb633;
+  left: 0;
+  bottom: 9px;
+  transition: all 0.35ms ease;
+}
+
+header li:not(.active)::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #feb633;
+  left: 0;
+  bottom: 9px;
+  transition: all 0.35ms ease;
+}
+
+.intro {
+  background: #282c2c;
+  padding-top: 125px;
+  padding-bottom: 250px;
+}
+
+.intro h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+}
+
+.intro h1 {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 0.012em;
+  color: #ffffff;
+}
+
+span {
+  color: #feb633;
+}
+
+.intro p {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 35px;
+  margin: 0;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+.cta {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin-top: 45px;
+  padding: 0 72px;
+  border: 2px solid #feb633;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #feb633;
+  line-height: 35px;
+  transition: all 0.35ms ease;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 35px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.hamburger > div {
+  width: 100%;
+  height: 3px;
+  background-color: #feb633;
+}
+
+.my-img {
+  position: absolute;
+  right: 135px;
+  margin-top: 175px;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-around; */
+}
+
+/* domaci slika me */
+
+.about-me {
+  background: #303131;
+  padding-top: 150px;
+  padding-bottom: 135px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.am-headline {
+  grid-column: span 5;
+  background: url(./Assets/about_us.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.am-headline h2 {
+  font-size: 45px;
+  line-height: 54px;
+  color: #cccccc;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  left: 186px;
+  top: 54px;
+  right: 100px;
+}
+
+.am-headline > h2:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-color: #feb633;
+  left: 0;
+  bottom: -15px;
+}
+
+.am-content {
+  grid-column: span 7;
+}
+
+.am-p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.button-holder {
+  display: flex;
+}
+
+.custom-button {
+  font-size: 20px;
+  line-height: 35px;
+  padding: 14px 40px;
+  color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid #feb633;
+  border-radius: 4px;
+}
+
+.custom-button.fill {
+  color: #000;
+  background: #feb633;
+}
+
+.button-holder > div:last-of-type {
+  margin-left: 30px;
+}
