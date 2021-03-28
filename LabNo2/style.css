@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -68,7 +68,7 @@ header li .active {
 }
 
 header a.active:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 2px;
@@ -79,7 +79,7 @@ header a.active:after {
 }
 
 header li:not(.active)::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 2px;
@@ -163,7 +163,7 @@ span {
   bottom: 0;
   display: flex;
   align-items: flex-end;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 
 /* domaci slika me */
@@ -203,7 +203,7 @@ span {
 }
 
 .am-headline > h2:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   background-color: #feb633;
@@ -237,11 +237,53 @@ span {
   border-radius: 4px;
 }
 
-.custom-button.fill {
+.custom-button .fill {
   color: #000;
   background: #feb633;
 }
 
 .button-holder > div:last-of-type {
   margin-left: 30px;
+}
+
+/* SERVICES */
+
+.services {
+  background: #303131;
+  padding-top: 150px;
+  padding-bottom: 135px;
+  height: 1181px;
+  text-align: center;
+}
+
+.services-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: auto;
+  padding-top: 100px;
+  max-width: 1280px;
+  padding-bottom: 0px;
+}
+
+.services h2 {
+  color: #cccccc;
+  position: absolute;
+  width: 197px;
+  height: 68px;
+  left: 486px;
+  top: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+}
+
+.underline {
+  border-bottom: 4px solid #feb633;
+  width: 100px;
 }
